@@ -1,5 +1,0 @@
-2022-01-09 13:55:05,648 Sleeping: 7 	Last bach-size: 0
-2022-01-09 13:55:12,658 Starting new HTTPS connection (1): www.homegate.ch:443
-2022-01-09 13:55:12,904 https://www.homegate.ch:443 "GET /kaufen/3001609011 HTTP/1.1" 200 None
-2022-01-09 13:55:12,915 Unknown Error (1)
-2022-01-09 13:55:12,915 Sleeping: 5 	Last bach-size: 0
