@@ -1,21 +1,23 @@
 import time, random, os, logging
-import urllib
-from urllib.request import Request, urlopen
 from datetime import datetime
 import requests
-from tqdm import tqdm
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+
+#Done IDs
+#Linus  | Macbook Pro   |    300160909 ca 40
+#Linus  | Macbook Pro   |    3001039264 -
+
+
+
 
 
 base_url = 'https://www.homegate.ch/kaufen/'
-id = 300160908
+id = 3001039264
 url = base_url + str(id)
 div_headline_identifier = {"class":"schlagzeilen-content schlagzeilen-overview"}
 
 ########### sleep ###########
 sleep_min = 5
-sleep_max = 15
+sleep_max = 20
 sleeptimes = list(range(sleep_min,sleep_max,1))
 
 ########### Data Name ###########
