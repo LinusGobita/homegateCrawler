@@ -3,15 +3,23 @@ from datetime import datetime
 import requests
 
 #Done IDs
+###Probeläufe
 #Linus  | Macbook Pro   |    300160909 ca 40
-#Linus  | Macbook Pro   |    3001039264 -
+#Linus  | Macbook Pro   |    3001039264 - 3001039552
+###Real
+#Linus  | iMac          |    3001539264 - 3001539291
+#Linus  | iMac          |    3001582000 -
+#Linus  | Macbook Pro   |    3001611000 - 3001612560 -
 
 
+#3001614515
+#3001609557
+#3001615108
 
 
 
 base_url = 'https://www.homegate.ch/kaufen/'
-id = 3001039264
+id = 3001612560
 url = base_url + str(id)
 div_headline_identifier = {"class":"schlagzeilen-content schlagzeilen-overview"}
 
