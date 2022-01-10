@@ -1,5 +1,6 @@
+import os
 import random
-import main
+import downloader
 from time import sleep
 
 from bs4 import BeautifulSoup
@@ -8,9 +9,11 @@ import requests
 if __name__ == "__main__":
     base_urls = ["https://www.homegate.ch/mieten/immobilien/land-schweiz/trefferliste?ep=",
                  "https://www.homegate.ch/kaufen/immobilien/land-schweiz/trefferliste?ep="]
+    download_counter = 0
     sleep_min = 2
     sleep_max = 5
     sleeptimes = list(range(sleep_min, sleep_max, 1))
+    os.listdir()
     for base_url in base_urls:
         page = 0
         while True:
@@ -22,9 +25,10 @@ if __name__ == "__main__":
             listingsList = listingsGroup.find_all("a", {"data-test": "result-list-item"})
 
             for listing in listingsList:
-                main.get_listing("https://www.homegate.ch"+listing["href"])
+                downloader.get_listing("https://www.homegate.ch"+listing["href"])
                 sleepTime = random.choice(sleeptimes)
-                print("Sleeping " + str(sleepTime) + " Seconds...")
+                download_counter += 1
+                print(f'Download  {download_counter} | Sleeping: {sleepTime} ')
                 sleep(sleepTime)
             if len(listingsList) < 10:
                 break
