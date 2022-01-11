@@ -18,3 +18,4 @@ class PropertyAdvertisement:
     rooms: int                    #Eckdaten : <div class="CoreAttributes_coreAttributes_2UrTf" data-v-392d27ad>
     features_equipment: str       #Array? <ul class="FeaturesFurnishings_list_1HzQj">
 
+

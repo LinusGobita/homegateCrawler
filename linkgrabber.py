@@ -1,11 +1,4 @@
 import os
-import random
-
-import numpy as np
-
-import downloader
-from time import sleep
-
 from bs4 import BeautifulSoup
 import requests
 

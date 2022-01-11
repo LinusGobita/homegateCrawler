@@ -1,14 +1,9 @@
-import os
 from time import sleep
 import random
 import pandas as pd
 
 import downloader
 import linkgrabber
-
-
-
-
 
 
 if __name__ == "__main__":
@@ -24,8 +19,6 @@ if __name__ == "__main__":
     sleep_max = 10
     sleeptimes = list(range(sleep_min, sleep_max, 1))
     download_counter = 1
-
-
 
 
     #Grab all URL from Advertisement

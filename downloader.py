@@ -1,7 +1,6 @@
 import time, random, os, logging
 from datetime import datetime
 import requests
-import app
 
 
 def get_listing(listingURL):

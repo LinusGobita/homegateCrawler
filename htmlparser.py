@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import re
 
 html_report_part1 = open("Homegate_3001611096.html", 'r')
 soup = BeautifulSoup(html_report_part1,'html.parser')
